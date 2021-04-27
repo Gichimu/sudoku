@@ -218,22 +218,22 @@
       </div>
     </div>
     <div id="myPopoverContent">
-      <table class="table table-bordered">
+      <table class="table table-bordered" style="width: 50%;">
         <tbody>
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td class="popover-cell"><a class="table-cell-link" href="">1</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">2</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">3</a></td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td class="popover-cell"><a class="table-cell-link" href="">4</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">5</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">6</a></td>
           </tr>
           <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <td class="popover-cell"><a class="table-cell-link" href="">7</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">8</a></td>
+            <td class="popover-cell"><a class="table-cell-link" href="">9</a></td>
           </tr>
         </tbody>
       </table>
@@ -255,10 +255,10 @@
     ></script>
     <script>
       $(document).ready(function () {
-        
         $(".cell")
           .popover({
             trigger: "focus",
+            sanitize: false,
             content: $("#myPopoverContent").html(),
             html: true,
           });          
