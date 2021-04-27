@@ -205,27 +205,9 @@
                       <td tabindex="0" class="cell text-center">6</td>
                     </tr>
                     <tr>
-                      <td
-                        tabindex="0"
-                        data-toggle="popover"
-                        class="cell text-center"
-                      >
-                        7
-                      </td>
-                      <td
-                        tabindex="0"
-                        data-toggle="popover"
-                        class="cell text-center"
-                      >
-                        8
-                      </td>
-                      <td
-                        tabindex="0"
-                        data-toggle="popover"
-                        class="cell text-center"
-                      >
-                        9
-                      </td>
+                      <td tabindex="0" class="cell text-center">7</td>
+                      <td tabindex="0" class="cell text-center">8</td>
+                      <td tabindex="0" class="cell text-center">9</td>
                     </tr>
                   </tbody>
                 </table>
@@ -273,13 +255,13 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".cell").popover({
-          trigger: "focus",
-          content: $('#myPopoverContent').html(),
-          html: true
-        }).click(function() {
-            $(this).popover('show');
-        });
+        
+        $(".cell")
+          .popover({
+            trigger: "focus",
+            content: $("#myPopoverContent").html(),
+            html: true,
+          });          
       });
     </script>
     <script src="scripts.js"></script>
